@@ -16,12 +16,11 @@ const PatientForm = () => {
 
   const [current, setCurrent] = useState(1);
   const history = useHistory();
-  const [checked, setChecked] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [form] = Form.useForm();
 
   useEffect(() => {
-    async function postData(url = "http://127.0.0.1:5000/") {
+    async function postData(url = "https://ps1-igib.herokuapp.com/") {
       const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify(data),
@@ -30,13 +29,11 @@ const PatientForm = () => {
         },
       });
       const patientData = await response.json();
-      console.log("response from the server", patientData);
       let str = `${patientData.id}`;
       history.replace(`/summary/${str}`);
     }
     if (data) {
-      postData(`http://127.0.0.1:5000/patient/299`).then((data) => {
-        console.log("data", data); // JSON data parsed by `data.json()` call
+      postData(`https://ps1-igib.herokuapp.com/patient/299`).then((data) => {
       });
     }
   }, [data]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -49,33 +46,23 @@ const PatientForm = () => {
     };
     setData(temp);
     // history.push('/summary');
-    console.log("You Submitted: ", temp);
   };
 
   const next_clinical = () => {
     setCurrent((e) => e + 1);
-    setChecked(true);
     // this.add.bind(this);
   };
 
   const pre_clinical = () => {
     setCurrent((e) => e - 1);
-    // console.log(current);
-    if (current !== 2) {
-      setChecked(true);
-    } else {
-      setChecked(false);
-    }
-    // this.add.bind(this);
+
   };
 
 const radioHandler = (heading, e) => {
   setRadioData((prevState) => {
     prevState[heading.replace(/ /g, "")] = e.target.value;
-    setChecked(false);
     return prevState;
   });
-  // console.log(radioData);
 };
 
 
@@ -90,7 +77,7 @@ const onOk = () => {
   setModalVisible(false);
   form.submit();
 };
-const submitButton = (
+const submitModal = (
   <Modal
     title="Basic Modal"
     visible={modalVisible}
@@ -110,8 +97,8 @@ return (
 
       {current === dataList.length - 1 && (
         <>
-          {submitButton}
-          <Button type="danger" 
+          {submitModal}
+          {/* <Button type="danger" 
           onClick={showModal} style={{
           position: "relative",
           bottom: "0%",
@@ -122,7 +109,7 @@ return (
         disabled={checked}
         >
             Submit
-          </Button>
+          </Button> */}
         </>
       )}
 

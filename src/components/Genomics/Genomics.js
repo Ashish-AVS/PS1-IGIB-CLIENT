@@ -31,7 +31,7 @@ export default function Genomics(props) {
       <Dragger
         onChange={fileHandler}
         name="file"
-        action="https://eb-ps1-api.herokuapp.com/genomics"
+        action="https://ps1-igib.herokuapp.com/genomics"
       >
         <p className="ant-upload-drag-icon">
           <InboxOutlined />
