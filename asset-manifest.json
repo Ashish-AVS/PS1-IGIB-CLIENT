@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/igib-client/static/css/main.aed8bb90.chunk.css",
+    "main.js": "/igib-client/static/js/main.a6512892.chunk.js",
+    "main.js.map": "/igib-client/static/js/main.a6512892.chunk.js.map",
+    "runtime-main.js": "/igib-client/static/js/runtime-main.b50082bc.js",
+    "runtime-main.js.map": "/igib-client/static/js/runtime-main.b50082bc.js.map",
+    "static/css/2.b4e56faa.chunk.css": "/igib-client/static/css/2.b4e56faa.chunk.css",
+    "static/js/2.e59c5079.chunk.js": "/igib-client/static/js/2.e59c5079.chunk.js",
+    "static/js/2.e59c5079.chunk.js.map": "/igib-client/static/js/2.e59c5079.chunk.js.map",
+    "index.html": "/igib-client/index.html",
+    "static/css/2.b4e56faa.chunk.css.map": "/igib-client/static/css/2.b4e56faa.chunk.css.map",
+    "static/css/main.aed8bb90.chunk.css.map": "/igib-client/static/css/main.aed8bb90.chunk.css.map",
+    "static/js/2.e59c5079.chunk.js.LICENSE.txt": "/igib-client/static/js/2.e59c5079.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b50082bc.js",
+    "static/css/2.b4e56faa.chunk.css",
+    "static/js/2.e59c5079.chunk.js",
+    "static/css/main.aed8bb90.chunk.css",
+    "static/js/main.a6512892.chunk.js"
+  ]
+}
