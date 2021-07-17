@@ -1,0 +1,37 @@
+.wrapG3{
+    height: 60vh;
+    width: 80vh;
+    min-height: 400px;
+    min-width: 1000px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: 33% 33% auto;
+    grid-template-areas: 
+        "imgG31 imgG32 imgG33"
+        "imgG31 imgG32 imgG33";
+    grid-gap: 5px;
+}
+
+.itemsG3{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#imgG31{
+    grid-area: imgG31;
+    background-color: rgb(150, 131, 27);
+}
+
+#imgG32{
+    grid-area: imgG32;
+    background-color: rgb(150, 131, 27);
+}
+
+#imgG33{
+    grid-area: imgG33;
+    background-color: rgb(150, 131, 27);
+}

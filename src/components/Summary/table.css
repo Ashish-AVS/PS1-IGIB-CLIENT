@@ -1,0 +1,33 @@
+/* th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: #b6b6b6;}
+
+table {
+  width: 50%;
+  margin-left:auto;margin-right:auto;
+}
+
+th {
+  height: 70px;
+}
+th, td {
+  text-align: center;
+}
+
+.details{
+  
+  padding: 1px 1px 1px 1px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+} */

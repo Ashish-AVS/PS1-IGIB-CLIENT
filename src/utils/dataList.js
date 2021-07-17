@@ -1,0 +1,232 @@
+export const dataList = [
+  {},
+  {
+    heading: "Distribution Of Skin Lesions",
+    opt: ["Generalised", "Limited", "Hands & Feet", "Herpetiform"],
+    mapping: ["Generalised", "Limited", "Hands & Feet", "Herpetiform"],
+    imgs: ["DL1", "DL2", "DL3", "DL4"],
+    size: ["23%"],
+    cardheight: ["100%"],
+    imageheight: ["90%"],
+    subtitle: ["Generalised", "Limited", "Hands & feet", "Herpetiform"],
+    title: [""]
+  },
+  {
+    heading: "Excess Granulation Tissue",
+    opt: ["Absent", "Present"],
+    mapping: ["-", "+"],
+    imgs: ["EG1", "EG2"],
+    size: ["47%"],
+    cardheight: ["100%"],
+    imageheight: ["98.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: ["Presence Of excess granulation tissues in wounds"]
+  },
+  {
+    heading: "Scarring",
+    opt: [
+      "Absent Scarring Or Pigmentary Change Only",
+      "Mild To Moderate Scarring Localised To Lesions",
+      "Severe Extensive Atrophic Scarring",
+    ],
+    mapping: ["-", "+", "++"],
+    imgs: ["SC1", "SC3", "SC4"],
+    size: ["32%"],
+    cardheight: ["100%"],
+    imageheight: ["83%"],
+    subtitle: ["Absent scarring or pigmentary change only", "Mild to Moderate scarring localised to lesions", "Severe extensive atrophic scarring"],
+    title: [""]
+  },
+  {
+    heading: "Milia",
+    opt: ["Absent", "Milia Localised To Scars", "Widespread Milia"],
+    mapping: ["-", "+", "++"],
+    imgs: ["MI1", "MI2"],
+    size: ["47%"],
+    cardheight: ["100%"],
+    imageheight: ["92%"],
+    subtitle: ["Localised Milia", "Widespread Milia"],
+    title: [""]
+  },
+  {
+    heading: "Nail Dystrophy",
+    opt: [
+      "No Dystrophic Nails",
+      "1-9 Dystrophic Nails",
+      "10 Or More Dystrophic Nails",
+    ],
+    mapping: ["-", "+", "++"],
+    imgs: ["ND1", "ND2", "ND3"],
+    size: ["32%"],
+    cardheight: ["100%"],
+    imageheight: ["98.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: ["Presence Of nail dystrophy characterized by thickening, deformity or discolouration"]
+  },
+  {
+    heading: "Nail Loss",
+    opt: [
+      "No Loss Of Nails",
+      "Loss Of Fewer Than 10 Nails",
+      "Loss Of 10 Or More Nails",
+    ],
+    mapping: ["-", "+", "++"],
+    imgs: ["NL1", "NL2", "NL3"],
+    size: ["32%"],
+    cardheight: ["70%"],
+    imageheight: ["98.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: ["Examples Of Nail Loss"]
+  },
+  {
+    heading: "Mucosal Erosions",
+    opt: [
+      "No Mucosal Erosions",
+      "Occasional Erosions",
+      "Frequent Or Persistent Erosions",
+    ],
+    mapping: ["-", "+", "++"],
+    imgs: ["ME1", "ME2", "ME3"],
+    size: ["32%"],
+    cardheight: ["87%"],
+    imageheight: ["98.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: ["Examples Of Mucosal Erosions"]
+  },
+  {
+    heading: "Eye Involvement",
+    opt: [
+      "None",
+      "Moderate: Recurrent Corneal Erosions",
+      "Severe: Granulations Or Scarring (Eg Symblepharon)",
+    ],
+    mapping: ["-", "+", "++"],
+    imgs: ["EI1", "EI2", "EI3"],
+    size: ["32%"],
+    cardheight: ["85%"],
+    imageheight: ["90%"],
+    subtitle: ["Moderate Eye Involvement", "Severe: Granulation", "Severe: Scarring, eg symblepharon"],
+    title: [""]
+  },
+  {
+    heading: "Hoarseness",
+    opt: ["Absence Of Hoarseness", "Presence Of Hoarseness"],
+    mapping: ["-", "+", "++"],
+    imgs: ["RT1", "RT1"],
+    size: ["48%"],
+    cardheight: ["100%"],
+    imageheight: ["92%"],
+    subtitle: ["Severe Respiratory tract involvement"],
+    title: [""]
+  },
+  {
+    heading: "Microstomia Or Ankyloglossia",
+    opt: ["Absent", "Present"],
+    mapping: ["-", "+", "++"],
+    imgs: ["MA1", "MA1"],
+    size: ["48%"],
+    cardheight: ["100%"],
+    imageheight: ["88%"],
+    subtitle: ["Microstomia With narrwing Of oral aperture as well as ankyloglossia With severe limitation Of toungue protrusion"],
+    title: [""]
+  },
+  {
+    heading: "Poor Dental Enamel",
+    opt: ["Normal", "Deficient enamel", "Not Applicable"],
+    mapping: ["-", "+", "++"],
+    imgs: ["DE1", "DE2", "DE3"],
+    size: ["32%"],
+    cardheight: ["100%"],
+    imageheight: ["98.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: ["Deficient dental enamel With yellow pitted teeth. Dental caries should be disregarded"]
+  },
+  {
+    heading: "Keratoderma",
+    opt: ["No keratoderma", "Moderate Keratoderma", "Severe Keratoderma"],
+    mapping: ["-", "+", "++"],
+    imgs: ["PK1", "PK2", "PK1"],
+    size: ["32%"],
+    cardheight: ["100%"],
+    imageheight: ["92%"],
+    subtitle: ["Moderate Keratoderma", "Severe Keratoderma"],
+    title: [""]
+  },
+  {
+    heading: "Chronic Wounds",
+    opt: ["Absence Of Chronic Wounds", "Moderate Chronic Wounds", "Severe Chronic Wounds"],
+    mapping: ["-", "+", "++"],
+    imgs: ["CW1", "CW2", "CW3"],
+    size: ["32%"],
+    cardheight: ["100%"],
+    imageheight: ["86%"],
+    subtitle: ["Moderate: Limited wounds lasting weeks", "Severe: more than limited wounds lasting months", "Severe: larger wounds lasting months"],
+    title: [""]
+  },
+  {
+    heading: "Syndactyly",
+    opt: ["Absence Of Syndactyly", "Moderate Syndactyly", "Severe Syndactyly"],
+    mapping: ["-", "+", "++"],
+    imgs: ["SY1", "SY2", "SY1"],
+    size: ["32%"],
+    cardheight: ["70%"],
+    imageheight: ["92%"],
+    subtitle: ["Moderate Syndactyly", "Severe Syndactyly"],
+    title: [""]
+  },
+  {
+    heading: "Alopecia",
+    opt: ["Absence Of Alopecia", "Moderate Alopecia", "Severe Alopecia"],
+    mapping: ["-", "+", "++"],
+    imgs: ["AL1", "AL2", "AL1"],
+    size: ["32%"],
+    cardheight: ["80%"],
+    imageheight: ["90%"],
+    subtitle: ["Moderate Alopecia", "Severe Alopecia"],
+    title: [""]
+  },
+  {
+    heading: "Poikiloderma",
+    opt: ["Absence Of Poikiloderma", "Presence Of Poikiloderma"],
+    mapping: ["-", "+", "++"],
+    imgs: ["PO1", "PO2"],
+    size: ["48%"],
+    cardheight: ["100%"],
+    imageheight: ["98.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: ["Poikiloderma characterized by hyperpigmentation, telangiectasia and atrophy"]
+  },
+  {
+    heading: "Relative Growth Failure",
+    opt: ["Absent", "Moderate", "Severe"],
+    mapping: ["-", "+", "++"],
+    imgs: ["RG1", "RG2", "RG3"],
+    size: ["32%"],
+    cardheight: ["100%"],
+    imageheight: ["90%"],
+    subtitle: ["No growth failure", "Moderate growth failure", "Severe growth failure"],
+    title: [""]
+  },
+  {
+    heading: "Survival After 2 Yrs",
+    opt: ["Did Not Survive", "Survived", "Alive And Under 2"],
+    mapping: ["-", "+", "++"],
+    imgs: ["SU1", "SU2", "SU3"],
+    size: ["32%"],
+    cardheight: ["70%"],
+    imageheight: ["96.5%"],
+    subtitle: ["", "", "", "", ""],
+    title: [""]
+  },
+  {
+    heading: "Parents Affected",
+    opt: ["Parents Not Affected", "Either Parent Affected", "Unknown"],
+    mapping: ["-", "+", "++"],
+    imgs: ["PA1", "PA2", "PA3"],
+    size: ["32%"],
+    cardheight: ["90%"],
+    imageheight: ["90%"],
+    subtitle: ["Parents Not Effected", "Either Parent Effected By EB", "Parental History Not Known"],
+    title: [""]
+  },
+];

@@ -1,0 +1,35 @@
+.wrap{
+    /* height: 1000px; */
+    /* margin: 1000px; */
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-template-rows: 15% auto;
+    grid-template-areas: 
+        "head head"
+        "container form";
+    grid-gap: 3px;
+}
+
+.items{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#head{
+    grid-area: head;
+    font-size: 3em;
+    background-color: rgb(20, 75, 112);
+}
+
+#container{
+    grid-area: container;
+    background-color: rgb(33, 105, 139);
+}
+
+#form{
+    grid-area: form;
+    background-color: rgb(21, 52, 78);
+}

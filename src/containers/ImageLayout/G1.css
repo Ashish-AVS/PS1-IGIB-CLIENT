@@ -1,0 +1,26 @@
+.wrapG1{
+    height: 60vh;
+    width: 80vh;
+    min-height: 400px;
+    min-width: 1000px;
+    margin: 0px 0px;
+    display: grid;
+    grid-template-columns: 99% auto;
+    grid-template-rows: 99% auto;
+    grid-template-areas: 
+        "imgG11 imgG11"
+        "imgG11 imgG11";
+}
+
+.itemsG1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#imgG11{
+    grid-area: imgG11;
+    background-color: rgb(150, 131, 27);
+}

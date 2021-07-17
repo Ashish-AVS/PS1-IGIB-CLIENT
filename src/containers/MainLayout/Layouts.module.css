@@ -1,0 +1,24 @@
+.site-layout-content {
+  min-height: 150vh;
+  max-height: "auto";
+  padding: 24px;
+  background: #fff;
+  overflow: "auto";
+}
+
+.layout{
+  /* min-height: 800px; */
+  height: "auto";
+  overflow: "auto";
+}
+.logo { 
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}

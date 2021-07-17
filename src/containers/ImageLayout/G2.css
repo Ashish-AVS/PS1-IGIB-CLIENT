@@ -1,0 +1,32 @@
+.wrapG2{
+    height: 60vh;
+    width: 80vh;
+    min-height: 400px;
+    min-width: 1000px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% auto;
+    grid-template-areas: 
+        "imgG21 imgG22"
+        "imgG21 imgG22";
+    grid-gap: 5px;
+}
+
+.itemsG2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#imgG21{
+    grid-area: imgG21;
+    background-color: rgb(150, 131, 27);
+}
+
+#imgG22{
+    grid-area: imgG22;
+    background-color: rgb(150, 131, 27);
+}
