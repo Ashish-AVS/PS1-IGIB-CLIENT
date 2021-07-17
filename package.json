@@ -1,6 +1,6 @@
 {
-  "name": "igib-client",
-  "homepage": "https://ashish-avs.github.io/igib-client/",
+  "name": "ps1-igib-client",
+  "homepage": "https://ashish-avs.github.io/ps1-igib-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
