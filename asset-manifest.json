@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ps1-igib-client/static/css/main.aed8bb90.chunk.css",
-    "main.js": "/ps1-igib-client/static/js/main.12e08c70.chunk.js",
-    "main.js.map": "/ps1-igib-client/static/js/main.12e08c70.chunk.js.map",
+    "main.css": "/ps1-igib-client/static/css/main.d885e910.chunk.css",
+    "main.js": "/ps1-igib-client/static/js/main.d631a769.chunk.js",
+    "main.js.map": "/ps1-igib-client/static/js/main.d631a769.chunk.js.map",
     "runtime-main.js": "/ps1-igib-client/static/js/runtime-main.7d653dc1.js",
     "runtime-main.js.map": "/ps1-igib-client/static/js/runtime-main.7d653dc1.js.map",
     "static/css/2.b4e56faa.chunk.css": "/ps1-igib-client/static/css/2.b4e56faa.chunk.css",
-    "static/js/2.9ba4af13.chunk.js": "/ps1-igib-client/static/js/2.9ba4af13.chunk.js",
-    "static/js/2.9ba4af13.chunk.js.map": "/ps1-igib-client/static/js/2.9ba4af13.chunk.js.map",
+    "static/js/2.11e4069c.chunk.js": "/ps1-igib-client/static/js/2.11e4069c.chunk.js",
+    "static/js/2.11e4069c.chunk.js.map": "/ps1-igib-client/static/js/2.11e4069c.chunk.js.map",
     "index.html": "/ps1-igib-client/index.html",
     "static/css/2.b4e56faa.chunk.css.map": "/ps1-igib-client/static/css/2.b4e56faa.chunk.css.map",
-    "static/css/main.aed8bb90.chunk.css.map": "/ps1-igib-client/static/css/main.aed8bb90.chunk.css.map",
-    "static/js/2.9ba4af13.chunk.js.LICENSE.txt": "/ps1-igib-client/static/js/2.9ba4af13.chunk.js.LICENSE.txt"
+    "static/css/main.d885e910.chunk.css.map": "/ps1-igib-client/static/css/main.d885e910.chunk.css.map",
+    "static/js/2.11e4069c.chunk.js.LICENSE.txt": "/ps1-igib-client/static/js/2.11e4069c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7d653dc1.js",
     "static/css/2.b4e56faa.chunk.css",
-    "static/js/2.9ba4af13.chunk.js",
-    "static/css/main.aed8bb90.chunk.css",
-    "static/js/main.12e08c70.chunk.js"
+    "static/js/2.11e4069c.chunk.js",
+    "static/css/main.d885e910.chunk.css",
+    "static/js/main.d631a769.chunk.js"
   ]
 }
