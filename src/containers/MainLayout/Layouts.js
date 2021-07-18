@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 
 const { Header, Content, Footer } = Layout;
 export default function Layouts(props) {
+
   const location = useLocation();
   return (
     <div>
@@ -14,7 +15,7 @@ export default function Layouts(props) {
         <Layout className={classes.layout}>
         <Header>
           <div className={classes["logo"]} />
-          <NavBar/>
+          <NavBar current={props.current} setCurrent={props.setCurrent} setRadioData={props.setRadioData}/>
         </Header>
         <Content style={{ padding: "0 50px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>

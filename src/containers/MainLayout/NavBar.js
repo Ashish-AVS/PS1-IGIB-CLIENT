@@ -1,7 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { Menu } from "antd";
 
-export default function NavBar() {
+import { dataList } from "../../utils/dataList";
+
+export default function NavBar({setCurrent }) {
+  const { SubMenu } = Menu;
+
+  const menuHandler = (index) => {
+    setCurrent(index);
+  };
+
   return (
     <div>
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
@@ -18,52 +26,20 @@ export default function NavBar() {
         <Menu.Item key={3}>
           <NavLink to="/genomics">Genomics</NavLink>
         </Menu.Item>
+
+        <SubMenu title="Index">
+          {dataList.map((el, index) => {
+            if (index) {
+              return (
+                <Menu.Item onClick={() => menuHandler(index)}>
+                  {el.heading}
+                </Menu.Item>
+              );
+            }
+          })}
+        </SubMenu>
+        <Menu.Item onClick={() => window.location.reload()}>Clear</Menu.Item>
       </Menu>
     </div>
   );
 }
-
-// <div>
-// <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-//   <Menu.Item key={1}>
-//     <NavLink to="/">Home</NavLink>
-//   </Menu.Item>
-
-//   {AuthCtx.isLoggedIn && (
-//     <>
-//       <Menu.Item key={2}>
-//         <NavLink to="/dashboard">Dashboard</NavLink>
-//       </Menu.Item>
-
-//       <Menu.Item key={3}>
-//         <NavLink to="/form">Form</NavLink>
-//       </Menu.Item>
-//     </>
-//   )}
-
-//   {!AuthCtx.isLoggedIn && (
-//     <>
-//       <Menu.Item key={4}>
-//         <NavLink to="/login">Login</NavLink>
-//       </Menu.Item>
-//       <Menu.Item key={5}>
-//         <NavLink to="/register">Register</NavLink>
-//       </Menu.Item>
-//     </>
-//   )}
-
-//   {AuthCtx.isLoggedIn && (
-//     <Menu.Item key={6}>
-//       <NavLink to="/" onClick={() => AuthCtx.logout()}>
-//         Logout
-//       </NavLink>
-//     </Menu.Item>
-//   )}
-//   {AuthCtx.isLoggedIn && (
-//     <Menu.Item key={7}>
-//       <NavLink to="/genomics">
-//         Genomics
-//       </NavLink>
-//     </Menu.Item>
-//   )}
-// </Menu>

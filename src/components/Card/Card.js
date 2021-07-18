@@ -6,6 +6,9 @@ const Card = (props) => {
     // console.log(props),
     <>
       <div className={classes["card"]} style={{ width: props.width }}>
+        <div>
+        {/* <img src= {`${process.env.PUBLIC_URL}/New_Pictures/${props.singleImg}.jpg`} style={{width: "98%"}}/> */}
+        </div>
         <label>
           <img
             src={props.imgsrc}
@@ -16,7 +19,7 @@ const Card = (props) => {
           <div>
             <div className={classes["card__info"]}>
               <Radio value={props.option.replace(/ /g, "") + props.i}>
-                <span style={{ fontSize: "1.3rem" }}>{props.option}</span>
+                <span style={{ fontSize: "18px" }}>{props.option}</span>
               </Radio>
             </div>
           </div>
