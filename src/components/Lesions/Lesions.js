@@ -43,7 +43,6 @@ export default function Lesions(props) {
               />
             ))}
           </Radio.Group>
-          <div className={classes["title"]}>{dataList[current].title}</div>
         </div>
       </div>
     </>

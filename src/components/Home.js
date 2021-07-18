@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import { Button, Space } from "antd";
 
+import IntroPg1 from "./IntroPages/IntroPg1";
+
 export default function Home() {
 
-  const homePage = (
+  return (
     <div>
-      <h1>Welcome</h1>
+     <div>
+       {/*<h1>Welcome</h1>
       <Space direction="vertical">
         <Button type="link" large>
           <Link to="/form">Click this to fill the Clinical Features!</Link>
@@ -15,12 +18,9 @@ export default function Home() {
             Click this to get the Filtered Genomics Data
           </Link>
         </Button>
-      </Space>
+      </Space> */}
+      <IntroPg1 />
     </div>
-  );
-  return (
-    <div>
-     {homePage}
     </div>
   );
 }

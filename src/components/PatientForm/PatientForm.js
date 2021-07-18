@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react";
 import { dataList } from "../../utils/dataList";
 import { useHistory } from "react-router-dom";
 
-import { Form, Button, Modal, message, Alert  } from "antd";
+import { Form, Button, Modal, message, Alert } from "antd";
 
 import Lesions from "../Lesions/Lesions";
 
 const PatientForm = ({ current, setCurrent, radioData, setRadioData }) => {
   const [data, setData] = useState();
   const history = useHistory();
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(false);
 
   const [modalVisible, setModalVisible] = useState(false);
   const [form] = Form.useForm();
   const success = () => {
-    message.success('Form Submitted successfully!');
+    message.success("Form Submitted successfully!");
   };
   useEffect(() => {
     async function postData(url = "https://ps1-igib.herokuapp.com/") {
@@ -81,7 +81,10 @@ const PatientForm = ({ current, setCurrent, radioData, setRadioData }) => {
     >
       <div>
         <h2>Do You wish to Submit?</h2>
-        <Alert message="Are you sure that you have selected all options?" type="error" />
+        <Alert
+          message="Are you sure that you have selected all options?"
+          type="error"
+        />
       </div>
     </Modal>
   );
@@ -94,27 +97,28 @@ const PatientForm = ({ current, setCurrent, radioData, setRadioData }) => {
           radioHandler={radioHandler}
           next_clinical={next_clinical}
           showModal={showModal}
-          radioData = {radioData}
+          radioData={radioData}
           setChecked={setChecked}
         />
 
         {current === dataList.length - 1 && (
           <>
             {submitModal}
-            <Button 
-          onClick={showModal} style={{
-          position: "relative",
-          bottom: "0%",
-          left: "83%",
-          width: "auto",
-          marginBottom: "1%",
-          backgroundColor: "red",
-          color: "#fff"
-        }}
-        disabled={checked}
-        >
-            Submit
-          </Button>
+            <Button
+              onClick={showModal}
+              style={{
+                position: "relative",
+                bottom: "0%",
+                left: "83%",
+                width: "auto",
+                marginBottom: "1%",
+                backgroundColor: "red",
+                color: "#fff",
+              }}
+              disabled={checked}
+            >
+              Submit
+            </Button>
           </>
         )}
 
@@ -124,11 +128,16 @@ const PatientForm = ({ current, setCurrent, radioData, setRadioData }) => {
             bottom: "0%",
             left: "83%",
             width: "16%",
+            margin: "0"
           }}
         >
           {current !== 1 && <Button onClick={pre_clinical}>Previous</Button>}
           &nbsp;&nbsp;&nbsp;
-          {current !== dataList.length - 1}
+          {current !== dataList.length - 1 && (
+            <Button disabled={checked} type="primary" onClick={next_clinical}>
+              Next
+            </Button>
+          )}
         </div>
       </Form>
     </>
