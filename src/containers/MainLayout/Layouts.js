@@ -14,7 +14,7 @@ export default function Layouts(props) {
       <div className={classes.layout}>
         <Layout className={classes.layout}>
         <Header>
-          <div className={classes["logo"]} />
+          <div className={classes.logo}></div>
           <NavBar current={props.current} setCurrent={props.setCurrent} setRadioData={props.setRadioData}/>
         </Header>
         <Content style={{ padding: "0 50px" }}>

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ps1-igib-client/static/css/main.d885e910.chunk.css",
-    "main.js": "/ps1-igib-client/static/js/main.7a2fcaca.chunk.js",
-    "main.js.map": "/ps1-igib-client/static/js/main.7a2fcaca.chunk.js.map",
+    "main.js": "/ps1-igib-client/static/js/main.d3042116.chunk.js",
+    "main.js.map": "/ps1-igib-client/static/js/main.d3042116.chunk.js.map",
     "runtime-main.js": "/ps1-igib-client/static/js/runtime-main.7d653dc1.js",
     "runtime-main.js.map": "/ps1-igib-client/static/js/runtime-main.7d653dc1.js.map",
     "static/css/2.b4e56faa.chunk.css": "/ps1-igib-client/static/css/2.b4e56faa.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.b4e56faa.chunk.css",
     "static/js/2.09b3d2ea.chunk.js",
     "static/css/main.d885e910.chunk.css",
-    "static/js/main.7a2fcaca.chunk.js"
+    "static/js/main.d3042116.chunk.js"
   ]
 }
