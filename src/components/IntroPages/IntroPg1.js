@@ -17,7 +17,7 @@ const IntroPg1 = () => {
       // }}
     >
       <div className={classes["welcometxt"]}>
-        Epidermolysis Bullosa Clinical Diagonistic Matrix
+        Epidermolysis Bullosa Clinical Diagnostic Matrix
       </div>
       <div className={classes["butterfly"]}>
         <img
@@ -42,7 +42,7 @@ const IntroPg1 = () => {
         </Button>
       </Space>
       <div style={{ marginTop: "10%" }}>
-        For furthur details see. Yenamandra V.K., Moss C, Sreenivas V, Khan M,
+        For further details see. Yenamandra V.K., Moss C, Sreenivas V, Khan M,
         Sivasubbu S, Sharma VK, Sethuraman G. Development of a clinical
         Diagonistic Matrix for characterising Inherited Epidermolysis Bullosa.
         British J Dermatol (in press)

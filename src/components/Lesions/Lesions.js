@@ -9,9 +9,6 @@ export default function Lesions(props) {
   const radioChange = (e) => {
     radioHandler(dataList[current].heading, e);
     if (current !== dataList.length - 1)
-      // setTimeout(() => {
-      //   next_clinical();
-      // }, 700);
       next_clinical();
 
 
