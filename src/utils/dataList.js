@@ -153,7 +153,7 @@ export const dataList = [
   },
   {
     heading: "Poor Dental Enamel",
-    opt: ["Normal", "Deficient enamel", "Not Applicable"],
+    opt: ["Normal", "Deficient Enamel", "Not Applicable"],
     mapping: ["-", "+", "++"],
     imgs: ["DE5", "DE4", "DE5"],
     size: ["22%","52.5%","22%"],
