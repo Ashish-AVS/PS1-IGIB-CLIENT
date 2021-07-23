@@ -17,7 +17,7 @@ const PatientForm = ({ current, setCurrent, radioData, setRadioData }) => {
     message.success("Form Submitted successfully!");
   };
   useEffect(() => {
-    async function postData(url = "https://ps1-igib.herokuapp.com/") {
+    async function postData(url = "/") {
       const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify(data),
@@ -30,7 +30,7 @@ const PatientForm = ({ current, setCurrent, radioData, setRadioData }) => {
       history.replace(`/summary/${str}`);
     }
     if (data) {
-      postData(`https://ps1-igib.herokuapp.com/patient/299`).then((data) => {
+      postData(`/patient/299`).then((data) => {
         success();
       });
     }

@@ -3,9 +3,11 @@ import { Button, Space } from "antd";
 
 import classes from "./IntoPg1.module.css";
 
-const hStyle = { color: "red" };
+import { useTranslation } from "react-i18next";
 
 const IntroPg1 = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       className={classes["main"]}
@@ -17,11 +19,11 @@ const IntroPg1 = () => {
       // }}
     >
       <div className={classes["welcometxt"]}>
-        Epidermolysis Bullosa Clinical Diagnostic Matrix
+        {t('EpidermolysisBullosaClinicalDiagnosticMatrix')}
       </div>
       <div className={classes["butterfly"]}>
         <img
-          src={`${process.env.PUBLIC_URL}/New_Pictures/all_logos.jpg`}
+          src={`${process.env.PUBLIC_URL}/New_Pictures/thebutterfly.jpg`}
           alt="butterflypic"
         />
       </div>
@@ -29,25 +31,22 @@ const IntroPg1 = () => {
         <Button type="link" large>
           <Link to="/form">
             <div style={{ fontSize: "21px" }}>
-              Click this to fill the Clinical Features!
+             {t("ClickThisToFillTheClinicalFeatures")}
             </div>
           </Link>
         </Button>
         <Button type="link" large>
           <Link to="/genomics">
             <div style={{ fontSize: "21px" }}>
-              Click this to get the Filtered Genomics Data
+              {t("ClickThisToFillTheFilteredGenomicsData")}
             </div>
           </Link>
         </Button>
       </Space>
       <div style={{ marginTop: "10%" }}>
-        For further details see. Yenamandra V.K., Moss C, Sreenivas V, Khan M,
-        Sivasubbu S, Sharma VK, Sethuraman G. Development of a clinical
-        Diagonistic Matrix for characterising Inherited Epidermolysis Bullosa.
-        British J Dermatol (in press)
+       {t('Forfurtherdetails')}
         <Button type="link" large>
-        <a target="_blank" href="https://doi.org/10.1111/bjd.15221">Read here</a>
+        <a target="_blank" rel="noreferrer" href="https://doi.org/10.1111/bjd.15221">{t('ReadHere')}</a>
         </Button>
           
       </div>

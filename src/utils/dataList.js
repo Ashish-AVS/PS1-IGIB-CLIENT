@@ -112,8 +112,8 @@ export const dataList = [
     heading: "Eye Involvement",
     opt: [
       "None",
-      "Moderate: Recurrent Corneal Erosions",
-      "Severe: Granulations Or Scarring (Eg Symblepharon)",
+      "Moderate - Recurrent Corneal Erosions",
+      "Severe - Granulations Or Scarring (Eg Symblepharon)",
     ],
     mapping: ["-", "+", "++"],
     imgs: ["EI12_with_border", "EI3", "EI9_with_border"],

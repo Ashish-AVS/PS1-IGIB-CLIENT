@@ -34,7 +34,7 @@ export default function Summary({ match }) {
   return (
     <div>
       <Document
-        file={`https://ps1-igib.herokuapp.com/report/${match.params.id}`}
+        file={`/report/${match.params.id}`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />
@@ -74,7 +74,7 @@ export default function Summary({ match }) {
             left: "69.5%",
             width: "16%",
           }}>
-        <a href={`https://ps1-igib.herokuapp.com/report/${match.params.id}`}>
+        <a href={`/report/${match.params.id}`}>
           <Button type="primary" shape="round" icon={<DownloadOutlined />} size={"large"}>
             Download Report
           </Button>

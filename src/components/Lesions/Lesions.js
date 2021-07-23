@@ -3,8 +3,11 @@ import { Radio } from "antd";
 import classes from "./Lesions.module.css";
 import { dataList } from "../../utils/dataList";
 import Card from "../Card/Card";
+import { useTranslation } from "react-i18next";
+
 
 export default function Lesions(props) {
+  const { t } = useTranslation()
   const {current, radioHandler, next_clinical, showModal, radioData } = props;
   const radioChange = (e) => {
     radioHandler(dataList[current].heading, e);
@@ -19,7 +22,7 @@ export default function Lesions(props) {
     <>
       <div className={classes.wrapper}>
         <div id={classes["head"]} className={classes["items"]}>
-          {dataList[current].heading}
+          {t(dataList[current].heading.replace(/ /g, ""))}
         </div>
         <div id={classes["container"]} className={classes["items"]}>
           <Radio.Group

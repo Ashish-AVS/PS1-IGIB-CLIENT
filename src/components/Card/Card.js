@@ -2,8 +2,11 @@ import classes from "./card.module.css";
 import React, { Suspense } from "react";
 import { Radio } from "antd";
 import { SuspenseImg } from "../SuspenseImage/SuspenseImage";
+import { useTranslation } from "react-i18next";
 
 const Card = (props) => {
+  const { t } = useTranslation()
+
   return (
     // console.log(props),
     <>
@@ -29,7 +32,7 @@ const Card = (props) => {
           <div>
             <div className={classes["card__info"]}>
               <Radio value={props.option.replace(/ /g, "") + props.i}>
-                <span style={{ fontSize: "18px" }}>{props.option}</span>
+                <span style={{ fontSize: "18px" }}>{t(props.option.replace(/ /g, ""))}</span>
               </Radio>
             </div>
           </div>
